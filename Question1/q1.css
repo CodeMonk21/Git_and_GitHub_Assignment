@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+:root{
+    --bg-page:#cccccc80;
+    --bg-login:#ffffff;
+    --text-color:#373D3F;
+    --mr-topbottom:30px;
+    --text-size:18px;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+.page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-page);
+}
+.container{
+    background-color: var(--bg-login);
+    font-family: 'Noto Sans', sans-serif;
+    color: #373D3F;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 400px;
+    padding: 20px 50px;
+}
+input{
+    display: block;
+    width: 100%;
+    margin: var(--mr-topbottom) 0px;
+}
+h2{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: var(--mr-topbottom);
+}
+.text-input{
+    border: none;
+    border-bottom: 1px solid;
+    padding: 20px 10px;
+    font-size: var(--text-size);
+}
+.text-input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+}
+.button{
+    padding: 10px;
+    margin-top: var(--mr-topbottom);
+    border-radius: 8px;
+    border: none;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: light;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.button:hover{
+    background-color: #2980b9;
+}
+@media screen and (max-width:576px) {
+    .page{
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+    .container{
+        margin: 0px 10px;
+        width: 100%;
+    }
+    
+}
